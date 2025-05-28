@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazin Sucuri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-header">
+      <div class="header-left">
+        <span class="logo">🍹 Happy Juice</span>
+      </div>
+      <div class="header-right">
+          <a href="interogari.html" class="list-icon">📋</a>
+        <input type="search" placeholder="Caută sucuri..." class="search-bar">
+        <a href="confirmare.html" class="cart-icon">🛒</a>
+        <span id="cartCount" class="cart-count">0</span>
+      </div>
+    </div>
+
+    <header class="hero-slider">
+        <div class="hero-slide active" style="background-image: url('images/top1.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('images/top2.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('images/top3.jpg');"></div>
+        <div class="overlay">
+            <div class="hero-text">
+                <h1>🍹 Happy Juice</h1>
+                <p>Prospețime naturală, direct în paharul tău!</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Lista produselor</h2>
+            <div id="bodyTabel" class="product-grid"></div>
+        </section>
+
+        <section class="card">
+            <h2>Șterge un produs</h2>
+            <div class="delete-form">
+                <input type="text" id="codStergere" placeholder="Cod produs de șters">
+                <button id="btnStergere" class="btn danger">Șterge</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Adaugă un produs</h2>
+            <form id="addProductForm" class="form-grid">
+                <input type="text" id="codProdus" placeholder="Cod produs" required>
+                <input type="text" id="numeProdus" placeholder="Nume produs" required>
+                <input type="text" id="tipProdus" placeholder="Tip (natural/artificial)" required>
+                <input type="number" id="pretProdus" placeholder="Preț" required>
+                <input type="number" id="procentZahar" placeholder="% Zahăr" required>
+                <input type="number" id="procentFructe" placeholder="% Fructe" required>
+                <input type="text" id="fructeFolosite" placeholder="Fructe (separate prin virgulă)" required>
+                <input type="text" id="imagineProdus" placeholder="Nume fișier imagine (ex: suc.png)" required>
+                <label><input type="checkbox" id="pentruCopii"> Pentru copii</label>
+                <button type="submit" class="btn">Adaugă produs</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo"><h2>🍹 Happy Juice</h2></div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/?locale=ro_RO" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                    <a href="https://x.com/" class="fa fa-twitter"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-section">
+                    <h4>Suport Clienți</h4>
+                    <ul>
+                        <li><a href="sory.html">Contact</a></li>
+                        <li><a href="sory.html">Întrebări frecvente</a></li>
+                        <li><a href="sory.html">Politica de returnare</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Despre</h4>
+                    <ul>
+                        <li><a href="sory.html">Povestea noastră</a></li>
+                        <li><a href="sory.html">Carieră</a></li>
+                        <li><a href="sory.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="sory.html">Termeni și condiții</a></li>
+                        <li><a href="sory.html">Politica de confidențialitate</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
