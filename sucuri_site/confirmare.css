@@ -1,0 +1,81 @@
+.container {
+    max-width: 1200px;
+    margin: 100px auto 2rem;
+    padding: 0 1rem;
+}
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+.product-item:last-child {
+    border-bottom: none;
+}
+.product-name {
+    font-weight: bold;
+}
+.product-price {
+    color: #4CAF50;
+}
+.remove-btn {
+    background: #f44336;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#confirmareSucces .confirm-btn {
+    display: block;
+    width: auto; /* sau o lățime fixă, ex: 200px */
+    max-width: 300px; /* sau mai puțin, după preferință */
+    padding: 0.5rem 1rem; /* ajustează padding-ul pentru a micșora butonul */
+    margin: 0 auto;
+    font-size: 0.9rem; /* poți micșora fontul pentru a fi și mai compact */
+}
+
+.total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: right;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asigură că body ocupă toată înălțimea viewport-ului */
+    margin: 0;
+    padding: 0;
+}
+.page-wrapper {
+    flex: 1; /* Face ca wrapper-ul să ocupe tot spațiul disponibil */
+}
+.footer {
+    background: #333;
+    color: white;
+    padding: 2rem 0;
+    margin-top: auto; /* Nu este necesar dacă folosești varianta de mai sus */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* sau orice culoare vrei */
+}
+.logo a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: inherit;
+}
+
+
